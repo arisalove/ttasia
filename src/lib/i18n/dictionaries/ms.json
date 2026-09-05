@@ -1,0 +1,56 @@
+{
+  "brand": {
+    "name": "TapTap",
+    "tagline": "Anda Tap, Kami Bertindak."
+  },
+  "nav": {
+    "howItWorks": "Cara ia berfungsi",
+    "suppliers": "Pembekal",
+    "login": "Log masuk",
+    "signup": "Daftar",
+    "dashboard": "Papan pemuka",
+    "catalogue": "Katalog",
+    "cart": "Troli",
+    "orders": "Pesanan",
+    "messages": "Mesej",
+    "notifications": "Notifikasi",
+    "favourites": "Kegemaran",
+    "profile": "Profil",
+    "logout": "Log keluar"
+  },
+  "common": {
+    "search": "Cari",
+    "searchPlaceholder": "Cari produk, kategori, pembekal…",
+    "viewAll": "Lihat semua",
+    "loading": "Memuatkan…",
+    "save": "Simpan",
+    "cancel": "Batal",
+    "submit": "Hantar",
+    "back": "Kembali",
+    "continue": "Teruskan",
+    "confirm": "Sahkan",
+    "edit": "Sunting",
+    "delete": "Padam",
+    "add": "Tambah",
+    "remove": "Buang",
+    "district": "Daerah",
+    "min": "min",
+    "each": "setiap satu",
+    "demoLabel": "Data demo — perniagaan fiksyen",
+    "noResults": "Tiada hasil dijumpai.",
+    "error": "Ralat berlaku. Sila cuba lagi.",
+    "requiredField": "Ruangan ini diperlukan"
+  },
+  "landing": {
+    "heroTitle": "Perniagaan F&B Sabah, dibekalkan.",
+    "heroSubtitle": "Sayur-sayuran segar, makanan laut, daging, barangan kering dan pembungkusan daripada pembekal Sabah yang disahkan — disebut harga, dipesan dan dihantar di satu tempat.",
+    "ctaBuyer": "Saya pembeli — layari pembekal",
+    "ctaSupplier": "Saya pembekal — senaraikan produk anda",
+    "statSuppliers": "Pembekal disahkan",
+    "statProducts": "Produk disenaraikan",
+    "statDistricts": "Daerah diliputi",
+    "featuredCategories": "Kategori popular",
+    "howItWorksTitle": "Dari tap ke meja, dalam beberapa langkah",
+    "trustTitle": "Dibina untuk cara perniagaan F&B Sabah membeli"
+  }
+}

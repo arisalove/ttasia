@@ -1,0 +1,56 @@
+{
+  "brand": {
+    "name": "TapTap",
+    "tagline": "You Tap, We Act."
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "suppliers": "Suppliers",
+    "login": "Log in",
+    "signup": "Sign up",
+    "dashboard": "Dashboard",
+    "catalogue": "Catalogue",
+    "cart": "Cart",
+    "orders": "Orders",
+    "messages": "Messages",
+    "notifications": "Notifications",
+    "favourites": "Favourites",
+    "profile": "Profile",
+    "logout": "Log out"
+  },
+  "common": {
+    "search": "Search",
+    "searchPlaceholder": "Search products, categories, suppliers…",
+    "viewAll": "View all",
+    "loading": "Loading…",
+    "save": "Save",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "back": "Back",
+    "continue": "Continue",
+    "confirm": "Confirm",
+    "edit": "Edit",
+    "delete": "Delete",
+    "add": "Add",
+    "remove": "Remove",
+    "district": "District",
+    "min": "min",
+    "each": "each",
+    "demoLabel": "Demo data — fictional business",
+    "noResults": "No results found.",
+    "error": "Something went wrong. Please try again.",
+    "requiredField": "This field is required"
+  },
+  "landing": {
+    "heroTitle": "Sabah's F&B businesses, supplied.",
+    "heroSubtitle": "Fresh produce, seafood, meat, dry goods and packaging from verified Sabah suppliers — quoted, ordered and delivered in one place.",
+    "ctaBuyer": "I'm a buyer — browse suppliers",
+    "ctaSupplier": "I'm a supplier — list your products",
+    "statSuppliers": "Verified suppliers",
+    "statProducts": "Products listed",
+    "statDistricts": "Districts covered",
+    "featuredCategories": "Popular categories",
+    "howItWorksTitle": "From tap to table, in a few steps",
+    "trustTitle": "Built for how Sabah F&B businesses actually buy"
+  }
+}
