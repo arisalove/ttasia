@@ -11,19 +11,7 @@ export type Locale = 'en' | 'ms';
 
 export type UserRole = 'buyer' | 'supplier' | 'admin';
 
-export type SabahDistrict =
-  | 'Tawau'
-  | 'Kota Kinabalu'
-  | 'Sandakan'
-  | 'Lahad Datu'
-  | 'Semporna'
-  | 'Kunak'
-  | 'Keningau'
-  | 'Kota Belud'
-  | 'Penampang'
-  | 'Putatan';
-
-export const SABAH_DISTRICTS: SabahDistrict[] = [
+export const SABAH_DISTRICTS = [
   'Tawau',
   'Kota Kinabalu',
   'Sandakan',
@@ -34,7 +22,9 @@ export const SABAH_DISTRICTS: SabahDistrict[] = [
   'Kota Belud',
   'Penampang',
   'Putatan',
-];
+] as const;
+
+export type SabahDistrict = (typeof SABAH_DISTRICTS)[number];
 
 export type VerificationStatus = 'unverified' | 'pending' | 'verified' | 'rejected' | 'suspended';
 

@@ -45,8 +45,9 @@ export function Messenger({
 
   // Deep-link: resume/create a thread with a given counterparty then select it.
   useEffect(() => {
-    const counterpartyId = counterpartyParam ? searchParams.get(counterpartyParam) : null;
-    if (!counterpartyId || !startThreadHref) return;
+    if (!counterpartyParam || !startThreadHref) return;
+    const counterpartyId = searchParams.get(counterpartyParam);
+    if (!counterpartyId) return;
     const existing = threads.find((t) => t.counterpartyId === counterpartyId);
     if (existing) {
       setActiveThreadId(existing.id);

@@ -34,7 +34,7 @@ export async function POST(request: Request) {
   }
   const userId = data.user.id;
   await supabase.from('users').insert({ id: userId, email: parsed.data.email, full_name: parsed.data.fullName, phone: parsed.data.phone, role: 'supplier' });
-  const { data: biz } = await supabase
+  const { data: biz, error: bizError } = await supabase
     .from('business_profiles')
     .insert({
       owner_user_id: userId,
@@ -47,6 +47,9 @@ export async function POST(request: Request) {
     })
     .select('id')
     .single();
+  if (bizError || !biz) {
+    return NextResponse.json({ error: bizError?.message ?? 'Could not create business profile.' }, { status: 500 });
+  }
   const slug = parsed.data.storeName
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')

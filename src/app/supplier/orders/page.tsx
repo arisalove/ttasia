@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { OrderListItem } from '@/components/order/order-list-item';
 import { EmptyState } from '@/components/ui/empty-state';
 import { getSession } from '@/lib/auth/session';

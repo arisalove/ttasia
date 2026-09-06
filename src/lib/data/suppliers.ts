@@ -205,7 +205,8 @@ export async function upsertProduct(input: UpsertProductInput): Promise<Product>
   if (productId) {
     await supabase.from('products').update(payload).eq('id', productId);
   } else {
-    const { data } = await supabase.from('products').insert(payload).select('id').single();
+    const { data, error } = await supabase.from('products').insert(payload).select('id').single();
+    if (error || !data) throw new Error(error?.message ?? 'Could not create product.');
     productId = data.id;
   }
   if (input.imageUrl) {

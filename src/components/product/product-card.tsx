@@ -19,7 +19,7 @@ export function ProductCard({
   isFavourite,
 }: {
   product: Product;
-  supplier?: Pick<SupplierProfile, 'storeName' | 'storeSlug' | 'district'> & { district?: string };
+  supplier?: Pick<SupplierProfile, 'storeName' | 'storeSlug'>;
   isBuyer: boolean;
   isFavourite?: boolean;
 }) {

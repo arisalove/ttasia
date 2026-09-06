@@ -1,4 +1,5 @@
 import { NextResponse, type NextRequest } from 'next/server';
+import type { CookieOptions } from '@supabase/ssr';
 import { DEMO_SESSION_COOKIE, ROLE_COOKIE } from './src/lib/auth/cookies';
 
 /**
@@ -50,7 +51,7 @@ export async function middleware(request: NextRequest) {
       {
         cookies: {
           getAll: () => request.cookies.getAll(),
-          setAll: (cookiesToSet) => {
+          setAll: (cookiesToSet: { name: string; value: string; options: CookieOptions }[]) => {
             cookiesToSet.forEach(({ name, value }) => request.cookies.set(name, value));
             response = NextResponse.next({ request });
             cookiesToSet.forEach(({ name, value, options }) => response.cookies.set(name, value, options));

@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { SABAH_DISTRICTS } from './types';
 
-const districtEnum = z.enum(SABAH_DISTRICTS as [string, ...string[]]);
+const districtEnum = z.enum(SABAH_DISTRICTS);
 
 export const loginSchema = z.object({
   email: z.string().min(1, 'Email is required').email('Enter a valid email address'),
